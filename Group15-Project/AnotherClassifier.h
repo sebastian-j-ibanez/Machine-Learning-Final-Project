@@ -1,13 +1,14 @@
 // PROG71030 - Final Project
 // By: Sebastian Ibanez, Kiana Safavi Baygi
 
+#include"Classifier.h"
 #include"Data.h"
-#pragma once
 
 using namespace std;
 
-class Classifier
-{
-	virtual void testing() = 0;
-	virtual void classify() = 0;
+class AnotherClassifer:public Classifier {
+
+public:
+	void testing();
+	void classify();
 };

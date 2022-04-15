@@ -139,11 +139,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="AnotherClassifer.cpp" />
+    <ClCompile Include="Data.cpp" />
+    <ClCompile Include="NNClassifer.cpp" />
     <ClCompile Include="Source.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="AnotherClassifier.h" />
     <ClInclude Include="Classifier.h" />
     <ClInclude Include="Data.h" />
+    <ClInclude Include="NNClassifier.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
