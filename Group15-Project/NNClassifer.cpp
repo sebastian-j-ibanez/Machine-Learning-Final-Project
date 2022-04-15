@@ -9,8 +9,6 @@
 
 using namespace std;
 
-
-
 NNClassifier::NNClassifier()
 {
 	ifstream input;
