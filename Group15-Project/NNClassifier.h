@@ -6,7 +6,7 @@
 #define TRAINING_FILE "trainingData"
 #define TESTING_FILE "testingData"
 #define UKNOWN_FILE "unknownData"
-#define ARRAY_SIZE 100
+#define ARRAY_SIZE 175
 
 using namespace std;
 
