@@ -89,7 +89,7 @@ void NNClassifier::testing()
 	for (int j = 0; j < i; j++)
 	{
 		Data nearestNeighbor = this->nearestNeighbor(testingPoints[j]);
-		cout<< "This testing point's orientation is: " << nearestNeighbor.getO() << endl;
+		cout<< "This testing point's orientation is: " << nearestNeighbor.getOrientation() << endl;
 	}
 
 	for (int j = 0; j < i; j++)
@@ -113,13 +113,12 @@ void NNClassifier ::classify() {
 			istringstream issline(line);
 
 			string dimentions;
-
 			getline(issline, dimentions);
 			istringstream issdimention(dimentions);
+
 			string x;
 			string y;
 			string z;
-			string orientation;
 
 			while (!issdimention.eof()) {
 				getline(issdimention, x, ',');
@@ -130,13 +129,18 @@ void NNClassifier ::classify() {
 			Data newPoint(stod(x), stod(y), stod(z), 0);
 			testingPoints[i] = newPoint;
 
-			//Find nearest neighbor and set orientation
-			Data nearestNeighbor = this->nearestNeighbor(testingPoints[i]);
-			testingPoints[i].setO(nearestNeighbor.getO());
-
 			i++;
 		}
 		input.close();
+
+		//Find nearest neighbor and set orientation
+		for(int j = 0; j < i; j++)
+		{
+			Data nearestNeighbor = this->nearestNeighbor(testingPoints[j]);
+			testingPoints[j].setO(nearestNeighbor.getO());
+		}
+
+		cout << "Orientations have been added to the unknown data file." << endl;
 	}
 
 	//WRITE TESTING DATA TO unknownData.txt

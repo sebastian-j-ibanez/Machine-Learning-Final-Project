@@ -29,6 +29,14 @@ public:
 	/// @date 15/04/2022
 	/// </summary>
 	Data();
+	/// <summary>
+	/// @brief This is the copy constructor constructor.
+	/// 
+	/// This constructor deep copies another Data object.
+	/// @author Kiana and Sebastian
+	/// @param Point: A Data object which will be deep copied.
+	/// @date 15/04/2022
+	/// </summary>
 	Data(Data&);
 	/// <summary>
 	/// @brief This is the parameterized constructor.
