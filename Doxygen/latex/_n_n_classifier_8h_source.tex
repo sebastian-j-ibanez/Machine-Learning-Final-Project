@@ -1,0 +1,29 @@
+\hypertarget{_n_n_classifier_8h_source}{}\doxysection{NNClassifier.\+h}
+\label{_n_n_classifier_8h_source}\index{C:/Users/sebas/source/repos/Group15-\/Project/Group15-\/Project/NNClassifier.h@{C:/Users/sebas/source/repos/Group15-\/Project/Group15-\/Project/NNClassifier.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{comment}{// PROG71030 -\/ Final Project}}
+\DoxyCodeLine{2 \textcolor{comment}{// By: Sebastian Ibanez, Kiana Safavi Baygi}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include"{}Data.h"{}}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include"{}Classifier.h"{}}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#define TRAINING\_FILE "{}trainingData"{}}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#define TESTING\_FILE "{}testingData"{}}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#define UKNOWN\_FILE "{}unknownData"{}}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#define ARRAY\_SIZE 175}}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{11 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{12 }
+\DoxyCodeLine{19 \textcolor{keyword}{class }\mbox{\hyperlink{class_n_n_classifier}{NNClassifier}}: \textcolor{keyword}{public} \mbox{\hyperlink{class_classifier}{Classifier}}}
+\DoxyCodeLine{20 \{}
+\DoxyCodeLine{21     \mbox{\hyperlink{class_data}{Data}} dataPoints[ARRAY\_SIZE];}
+\DoxyCodeLine{22     \mbox{\hyperlink{class_data}{Data}} testingPoints[ARRAY\_SIZE];}
+\DoxyCodeLine{23 \textcolor{keyword}{public}:}
+\DoxyCodeLine{31     \mbox{\hyperlink{class_n_n_classifier_aabbf0c05f49549bffadd139979c48203}{NNClassifier}}();}
+\DoxyCodeLine{39     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_n_n_classifier_abd024c94021276a66daeac0e7a984212}{testing}}();}
+\DoxyCodeLine{47     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_n_n_classifier_ad5596f4ab8a264d77b5d366ea2243277}{classify}}();}
+\DoxyCodeLine{58     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_n_n_classifier_ad5596f4ab8a264d77b5d366ea2243277}{classify}}(\textcolor{keywordtype}{double}, \textcolor{keywordtype}{double}, \textcolor{keywordtype}{double});}
+\DoxyCodeLine{68     \mbox{\hyperlink{class_data}{Data}}\& \mbox{\hyperlink{class_n_n_classifier_a4c9e9915f36ce622bcfb1d404ffabf42}{nearestNeighbor}}(\mbox{\hyperlink{class_data}{Data}} point);}
+\DoxyCodeLine{69 \};}
+
+\end{DoxyCode}

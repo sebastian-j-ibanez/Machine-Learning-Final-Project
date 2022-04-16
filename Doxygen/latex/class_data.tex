@@ -1,0 +1,386 @@
+\hypertarget{class_data}{}\doxysection{Data Class Reference}
+\label{class_data}\index{Data@{Data}}
+
+
+ 
+
+
+
+
+{\ttfamily \#include $<$Data.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_data_af11f741cb7f587e2e495452a8905a22a}{Data}} ()
+\item 
+\mbox{\hyperlink{class_data_ade9706ca0f6e26cb56a488641695a3fa}{Data}} (\mbox{\hyperlink{class_data}{Data}} \&)
+\item 
+\mbox{\hyperlink{class_data_a18634ee79de7ba36b043563589953d1b}{Data}} (double x, double y, double z, int o)
+\item 
+double \mbox{\hyperlink{class_data_a2f00cda7bd830ee657681cb701d04656}{getX}} (void)
+\item 
+double \mbox{\hyperlink{class_data_a58ccf262fd88b328d1ff52597ca9734a}{getY}} (void)
+\item 
+double \mbox{\hyperlink{class_data_a74c006dc9fc4b66bfc326833a3e35a7a}{getZ}} (void)
+\item 
+int \mbox{\hyperlink{class_data_a7643776a81ab79b87f1066d62e89726d}{getO}} (void)
+\item 
+void \mbox{\hyperlink{class_data_a20213091d6ba033cdf7d571e75f71a97}{setX}} (double x)
+\item 
+void \mbox{\hyperlink{class_data_ad12a5ac2bef561dd3ddc402388f094d4}{setY}} (double y)
+\item 
+void \mbox{\hyperlink{class_data_ae5dda3a8d8709e21dd3048a840a69a77}{setZ}} (double z)
+\item 
+void \mbox{\hyperlink{class_data_ae73af7c0f11344414d19087d6441f77c}{setO}} (int o)
+\item 
+double \mbox{\hyperlink{class_data_a1d41c63a71ad41e2bb647d13e807fb39}{get\+Distance\+From}} (\mbox{\hyperlink{class_data}{Data}})
+\item 
+string \mbox{\hyperlink{class_data_a246ba26716f65ce0b9f0bef3e1368185}{get\+Orientation}} ()
+\item 
+\mbox{\hyperlink{class_data}{Data}} \mbox{\hyperlink{class_data_ae38c9daaee166b8077b8f061fe7557b6}{operator=}} (\mbox{\hyperlink{class_data}{Data}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+This is the \mbox{\hyperlink{class_data}{Data}} class.
+
+\begin{DoxyAuthor}{Author}
+Kiana and Sebastian 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+15/04/2022 
+\end{DoxyDate}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_data_af11f741cb7f587e2e495452a8905a22a}\label{class_data_af11f741cb7f587e2e495452a8905a22a}} 
+\index{Data@{Data}!Data@{Data}}
+\index{Data@{Data}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{Data()}{Data()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Data\+::\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+
+
+This is the default constructor.
+
+This constructor creates a \mbox{\hyperlink{class_data}{Data}} object. \begin{DoxyAuthor}{Author}
+Kiana and Sebastian 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+15/04/2022 
+\end{DoxyDate}
+\mbox{\Hypertarget{class_data_ade9706ca0f6e26cb56a488641695a3fa}\label{class_data_ade9706ca0f6e26cb56a488641695a3fa}} 
+\index{Data@{Data}!Data@{Data}}
+\index{Data@{Data}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{Data()}{Data()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Data\+::\+Data (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_data}{Data}} \&}]{point }\end{DoxyParamCaption})}
+
+
+
+
+
+This is the copy constructor constructor.
+
+This constructor deep copies another \mbox{\hyperlink{class_data}{Data}} object. \begin{DoxyAuthor}{Author}
+Kiana and Sebastian 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em Point} & A \mbox{\hyperlink{class_data}{Data}} object which will be deep copied. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+15/04/2022 
+\end{DoxyDate}
+\mbox{\Hypertarget{class_data_a18634ee79de7ba36b043563589953d1b}\label{class_data_a18634ee79de7ba36b043563589953d1b}} 
+\index{Data@{Data}!Data@{Data}}
+\index{Data@{Data}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{Data()}{Data()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Data\+::\+Data (\begin{DoxyParamCaption}\item[{double}]{x,  }\item[{double}]{y,  }\item[{double}]{z,  }\item[{int}]{o }\end{DoxyParamCaption})}
+
+
+
+
+
+This is the parameterized constructor.
+
+This constructor initializes a \mbox{\hyperlink{class_data}{Data}} object with additional information. \begin{DoxyAuthor}{Author}
+Kiana and Sebastian 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em X} & A double value for the x position. \\
+\hline
+{\em Y} & A double value for the y position. \\
+\hline
+{\em Z} & A double value for the z position. \\
+\hline
+{\em O} & A double value for the o position. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+15/04/2022 
+\end{DoxyDate}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_data_a1d41c63a71ad41e2bb647d13e807fb39}\label{class_data_a1d41c63a71ad41e2bb647d13e807fb39}} 
+\index{Data@{Data}!getDistanceFrom@{getDistanceFrom}}
+\index{getDistanceFrom@{getDistanceFrom}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{getDistanceFrom()}{getDistanceFrom()}}
+{\footnotesize\ttfamily double Data\+::get\+Distance\+From (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_data}{Data}}}]{point }\end{DoxyParamCaption})}
+
+
+
+
+
+This is the get\+Distance\+From function.
+
+This function sets returns the distance from the current \mbox{\hyperlink{class_data}{Data}} to another \mbox{\hyperlink{class_data}{Data}}. 
+\begin{DoxyParams}{Parameters}
+{\em This} & function takes in a \mbox{\hyperlink{class_data}{Data}} object as a parameter. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+Kiana and Sebastian 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+15/04/2022 
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+This function returns a double, for the distance. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_data_a7643776a81ab79b87f1066d62e89726d}\label{class_data_a7643776a81ab79b87f1066d62e89726d}} 
+\index{Data@{Data}!getO@{getO}}
+\index{getO@{getO}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{getO()}{getO()}}
+{\footnotesize\ttfamily int Data\+::getO (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+
+
+This is the getO function.
+
+This function returns the o value from the current object. \begin{DoxyAuthor}{Author}
+Kiana and Sebastian 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+15/04/2022 
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+This function returns an integer, for the o value. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_data_a246ba26716f65ce0b9f0bef3e1368185}\label{class_data_a246ba26716f65ce0b9f0bef3e1368185}} 
+\index{Data@{Data}!getOrientation@{getOrientation}}
+\index{getOrientation@{getOrientation}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{getOrientation()}{getOrientation()}}
+{\footnotesize\ttfamily string Data\+::get\+Orientation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+
+
+This is the get\+Orientation function.
+
+This function sets returns the orientation label from a \mbox{\hyperlink{class_data}{Data}} object. \begin{DoxyAuthor}{Author}
+Kiana and Sebastian 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+15/04/2022 
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+This function returns a string, for the orientation. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_data_a2f00cda7bd830ee657681cb701d04656}\label{class_data_a2f00cda7bd830ee657681cb701d04656}} 
+\index{Data@{Data}!getX@{getX}}
+\index{getX@{getX}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{getX()}{getX()}}
+{\footnotesize\ttfamily double Data\+::getX (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+
+
+This is the getX function.
+
+This function returns the x value from the current object. \begin{DoxyAuthor}{Author}
+Kiana and Sebastian 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+15/04/2022 
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+This function returns a double, for the x value. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_data_a58ccf262fd88b328d1ff52597ca9734a}\label{class_data_a58ccf262fd88b328d1ff52597ca9734a}} 
+\index{Data@{Data}!getY@{getY}}
+\index{getY@{getY}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{getY()}{getY()}}
+{\footnotesize\ttfamily double Data\+::getY (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+
+
+This is the getY function.
+
+This function returns the y value from the current object. \begin{DoxyAuthor}{Author}
+Kiana and Sebastian 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+15/04/2022 
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+This function returns a double, for the y value. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_data_a74c006dc9fc4b66bfc326833a3e35a7a}\label{class_data_a74c006dc9fc4b66bfc326833a3e35a7a}} 
+\index{Data@{Data}!getZ@{getZ}}
+\index{getZ@{getZ}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{getZ()}{getZ()}}
+{\footnotesize\ttfamily double Data\+::getZ (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+
+
+This is the getZ function.
+
+This function returns the z value from the current object. \begin{DoxyAuthor}{Author}
+Kiana and Sebastian 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+15/04/2022 
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+This function returns a double, for the z value. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_data_ae38c9daaee166b8077b8f061fe7557b6}\label{class_data_ae38c9daaee166b8077b8f061fe7557b6}} 
+\index{Data@{Data}!operator=@{operator=}}
+\index{operator=@{operator=}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_data}{Data}} Data\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_data}{Data}}}]{point }\end{DoxyParamCaption})}
+
+
+
+
+
+This is the assignment operator for =.
+
+This function is the assignment operator for the \mbox{\hyperlink{class_data}{Data}} class. 
+\begin{DoxyParams}{Parameters}
+{\em Point} & A \mbox{\hyperlink{class_data}{Data}} object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+Kiana and Sebastian 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+15/04/2022 
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+This function returns a \mbox{\hyperlink{class_data}{Data}} object. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_data_ae73af7c0f11344414d19087d6441f77c}\label{class_data_ae73af7c0f11344414d19087d6441f77c}} 
+\index{Data@{Data}!setO@{setO}}
+\index{setO@{setO}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{setO()}{setO()}}
+{\footnotesize\ttfamily void Data\+::setO (\begin{DoxyParamCaption}\item[{int}]{o }\end{DoxyParamCaption})}
+
+
+
+
+
+This is the setO function.
+
+This function sets the o value from the current object. 
+\begin{DoxyParams}{Parameters}
+{\em This} & function takes a double, for the new o value. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+Kiana and Sebastian 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+15/04/2022 
+\end{DoxyDate}
+\mbox{\Hypertarget{class_data_a20213091d6ba033cdf7d571e75f71a97}\label{class_data_a20213091d6ba033cdf7d571e75f71a97}} 
+\index{Data@{Data}!setX@{setX}}
+\index{setX@{setX}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{setX()}{setX()}}
+{\footnotesize\ttfamily void Data\+::setX (\begin{DoxyParamCaption}\item[{double}]{x }\end{DoxyParamCaption})}
+
+
+
+
+
+This is the setX function.
+
+This function sets the x value from the current object. 
+\begin{DoxyParams}{Parameters}
+{\em This} & function takes a double, for the new x value. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+Kiana and Sebastian 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+15/04/2022 
+\end{DoxyDate}
+\mbox{\Hypertarget{class_data_ad12a5ac2bef561dd3ddc402388f094d4}\label{class_data_ad12a5ac2bef561dd3ddc402388f094d4}} 
+\index{Data@{Data}!setY@{setY}}
+\index{setY@{setY}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{setY()}{setY()}}
+{\footnotesize\ttfamily void Data\+::setY (\begin{DoxyParamCaption}\item[{double}]{y }\end{DoxyParamCaption})}
+
+
+
+
+
+This is the setY function.
+
+This function sets the y value from the current object. 
+\begin{DoxyParams}{Parameters}
+{\em This} & function takes a double, for the new y value. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+Kiana and Sebastian 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+15/04/2022 
+\end{DoxyDate}
+\mbox{\Hypertarget{class_data_ae5dda3a8d8709e21dd3048a840a69a77}\label{class_data_ae5dda3a8d8709e21dd3048a840a69a77}} 
+\index{Data@{Data}!setZ@{setZ}}
+\index{setZ@{setZ}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{setZ()}{setZ()}}
+{\footnotesize\ttfamily void Data\+::setZ (\begin{DoxyParamCaption}\item[{double}]{z }\end{DoxyParamCaption})}
+
+
+
+
+
+This is the setZ function.
+
+This function sets the z value from the current object. 
+\begin{DoxyParams}{Parameters}
+{\em This} & function takes a double, for the new z value. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+Kiana and Sebastian 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+15/04/2022 
+\end{DoxyDate}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/sebas/source/repos/\+Group15-\/\+Project/\+Group15-\/\+Project/Data.\+h\item 
+C\+:/\+Users/sebas/source/repos/\+Group15-\/\+Project/\+Group15-\/\+Project/Data.\+cpp\end{DoxyCompactItemize}
