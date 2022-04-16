@@ -30,7 +30,7 @@ public:
 	/// @date 15/04/2022
 	/// </summary>
 	Data();
-	//Data(Data&);
+	Data(Data&);
 	/// <summary>
 	/// @brief This is the parameterized constructor.
 	/// 
@@ -124,6 +124,24 @@ public:
 	/// @date 15/04/2022
 	/// @return This function returns a double, for the distance.
 	/// </summary>
-	double getDistanceFrom(Data point);
-	//Data& operator=(Data&);
+	double getDistanceFrom(Data);
+	/// <summary>
+	/// @brief This is the getOrientation function.
+	/// 
+	/// This function sets returns the orientation label from a Data object.
+	/// @author Kiana and Sebastian
+	/// @date 15/04/2022
+	/// @return This function returns a string, for the orientation.
+	/// </summary>
+	string getOrientation();
+	/// <summary>
+	/// @brief This is the assignment operator for =.
+	/// 
+	/// This function is the assignment operator for the Data class.
+	/// @param Point: A Data object
+	/// @author Kiana and Sebastian
+	/// @date 15/04/2022
+	/// @return This function returns a Data object.
+	/// </summary>
+	Data operator = (Data);
 };

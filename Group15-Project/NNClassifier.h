@@ -6,9 +6,9 @@
 #define TRAINING_FILE "trainingData"
 #define TESTING_FILE "testingData"
 #define UKNOWN_FILE "unknownData"
+#define ARRAY_SIZE 100
 
 using namespace std;
-
 
 /// <summary>
 /// @brief This is the NNClassifier class. It inherits from the Classifier class.
@@ -18,8 +18,8 @@ using namespace std;
 /// </summary>
 class NNClassifier: public Classifier
 {
-	Data dataPoints[1000];
-	Data testingPoints[200];
+	Data dataPoints[ARRAY_SIZE];
+	Data testingPoints[ARRAY_SIZE];
 public:
 	/// <summary>
 	/// @brief This is the default constructor.
@@ -62,7 +62,8 @@ public:
 	/// This function finds the nearest neighbor to a specific data point.
 	/// @author Kiana and Sebastian
 	/// @param Point: A Data object
+	/// @return Point: A Data object by reference
 	/// @date 15/04/2022
 	/// </summary>
-	Data nearestNeighbor(Data point);
+	Data& nearestNeighbor(Data point);
 };

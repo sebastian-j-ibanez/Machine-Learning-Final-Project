@@ -16,6 +16,13 @@ Data::Data(double x, double y, double z, int o)
 	this->o = o;
 }
 
+Data::Data(Data& point) {
+	this->x = point.x;
+	this->y = point.y;
+	this->z = point.z;
+	this->o = point.o;
+}
+
 double Data::getX(void) {
 	return x;
 }
@@ -47,25 +54,38 @@ void Data::setZ(double z) {
 void Data::setO(int o) {
 	this->o = o;
 }
-	
-double Data::getDistanceFrom(Data point)
+
+string Data::getOrientation()
 {
-	return( sqrt((pow((point.getX() - this->x),2) + pow((point.getY() - this->y),2) + pow((point.getZ() - this->z),2))));
+	if (this->o == 1)
+		return "Face Up";
+	else if (this->o == 2)
+		return "Face Down";
+	else if (this->o == 3)
+		return "Portrait";
+	else if (this->o == 4)
+		return "Portrait Upside Down";
+	else if (this->o == 5)
+		return "Landscape Left";
+	else if (this->o == 6)
+		return "Landscape Right";
 }
 
-//Data& Data::operator=(Data& point)
-//{
-//	if (this != &point)
-//	{
-//		x = point.x;
-//		y = point.y;
-//		z = point.z;
-//		o = point.o;
-//	}
-//	return *this;
-//}
-//Data::Data(Data &point) {
-//	x = point.x;
-//	y = point.y;
-//	z = point.z;
-//}
+double Data::getDistanceFrom(Data point)
+{
+	double d = sqrt(pow((point.getX() - this->x), 2) + pow((point.getY() - this->y), 2) + pow((point.getZ() - this->z), 2));
+	return d;
+}
+
+Data Data::operator = (Data point)
+{
+	if (this != &point)
+	{
+		this->x = point.x;
+		this->y = point.y;
+		this->z = point.z;
+		this->o = point.o;
+	}
+
+	return *this;
+}

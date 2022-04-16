@@ -12,19 +12,19 @@ using namespace std;
 int main()
 {
 	NNClassifier classifier;
-	//classifier.testing();
-	string x, y, z;
-	cout << "Please enter the x value" << endl;
-	cin >> x ;
-	
-	cout << "Please enter the y value" << endl;
-	cin >> y;
-	
-	cout << "Please enter the z value" << endl;
-	cin >> z;
-	
-	classifier.classify(stod(x),stod( y),stod( z));
-	
+	classifier.classify();
+
+	//string x, y, z;
+	//cout << "Please enter the x value" << endl;
+	//cin >> x ;
+	//
+	//cout << "Please enter the y value" << endl;
+	//cin >> y;
+	//
+	//cout << "Please enter the z value" << endl;
+	//cin >> z;
+	//
+	//classifier.classify(stod(x),stod( y),stod( z));
 
 	return 0;
 }
