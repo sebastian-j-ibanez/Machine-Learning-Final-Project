@@ -41,9 +41,7 @@ NNClassifier::NNClassifier()
 
 			}
 			Data newPoint(stod(x), stod(y), stod(z), stoi(orientation));
-			this->dataPoints[i] = newPoint;
-			//cout << newPoint.getX() << " " << newPoint.getY() << " " << newPoint.getZ() << " " << newPoint.getO() << endl;
-			//cout << dataPoints[i].getX() << " " << dataPoints[i].getY() << " " << dataPoints[i].getZ() << " " << dataPoints[i].getO() << endl;
+			dataPoints[i] = newPoint;
 			i++;
 		}
 	}
@@ -79,7 +77,7 @@ void NNClassifier::testing()
 
 				}
 				Data newPoint(stod(x), stod(y), stod(z), stoi(orientation));
-				this->testingPoints[i] = newPoint;
+				testingPoints[i] = newPoint;
 				
 				i++;
 			}
@@ -91,12 +89,7 @@ void NNClassifier::testing()
 	for (int j = 0; j < i; j++)
 	{
 		Data nearestNeighbor = this->nearestNeighbor(testingPoints[j]);
-		cout<<nearestNeighbor.getO() << "," << testingPoints[j].getO() << endl;
-		if (nearestNeighbor.getO() != testingPoints[j].getO())
-		{
-			cout << "Incorrect label found." << endl;
-			//exit(1);
-		}
+		cout<< "This testing point's orientation is: " << nearestNeighbor.getO() << endl;
 	}
 
 	for (int j = 0; j < i; j++)
@@ -127,23 +120,23 @@ void NNClassifier ::classify() {
 			string y;
 			string z;
 			string orientation;
+
 			while (!issdimention.eof()) {
 				getline(issdimention, x, ',');
 				getline(issdimention, y, ',');
 				getline(issdimention, z);
-
 			}
+
 			Data newPoint(stod(x), stod(y), stod(z), 0);
-			this->testingPoints[i] = newPoint;
+			testingPoints[i] = newPoint;
+
+			//Find nearest neighbor and set orientation
+			Data nearestNeighbor = this->nearestNeighbor(testingPoints[i]);
+			testingPoints[i].setO(nearestNeighbor.getO());
+
 			i++;
 		}
 		input.close();
-	}
-	
-	for (int j = 0; j < i; j++)
-	{
-		Data nearestNeighbor = this->nearestNeighbor(testingPoints[j]);
-		testingPoints[j].setO(nearestNeighbor.getO());
 	}
 
 	//WRITE TESTING DATA TO unknownData.txt

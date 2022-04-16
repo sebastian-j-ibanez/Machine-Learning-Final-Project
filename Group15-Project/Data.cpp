@@ -10,8 +10,8 @@ Data::Data()
 	
 Data::Data(double x, double y, double z, int o)
 {
-	this->x=x;
-	this->y=y;
+	this->x= x;
+	this->y= y;
 	this->z = z;
 	this->o = o;
 }

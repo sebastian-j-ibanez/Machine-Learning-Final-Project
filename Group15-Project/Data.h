@@ -18,7 +18,6 @@ using namespace std;
 /// </summary>
 class Data
 {
-	enum class orientation { faceUP, faceDown, Portrait, PortraitDown, LandscapeLeft, LandscapeRight };
 	int o;
 	double x, y, z;
 public:
